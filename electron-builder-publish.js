@@ -2,7 +2,7 @@ const config = {
   publish: [
       'github'
   ],
-  productName: 'Tidepool Uploader',
+  productName: 'Exadoctor Uploader',
   appId: 'org.tidepool.TidepoolUploader',
   directories: {
     buildResources: 'resources',

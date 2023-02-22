@@ -541,14 +541,14 @@ app.on('activate', () => {
 
 function setLanguage() {
     console.log('Value of I18N_ENABLED:  ', process.env.I18N_ENABLED);
-  if (process.env.I18N_ENABLED === 'true') {
+//  if (process.env.I18N_ENABLED === 'true') {
     let lng = app.getLocale();
     // remove country in language locale
     if (_.includes(lng,'-'))
       lng = (_.split(lng,'-').length > 0) ? _.split(lng,'-')[0] : lng;
 
     i18nextOptions['lng'] = lng;
-  }
+  //}
 
   if (!i18n.Initialize) {
     i18n.use(i18nextBackend).init(i18nextOptions, function(err, t) {

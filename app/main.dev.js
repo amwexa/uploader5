@@ -540,6 +540,7 @@ app.on('activate', () => {
 });
 
 function setLanguage() {
+    console.log('Value of I18N_ENABLED:  ', process.env.I18N_ENABLED);
   if (process.env.I18N_ENABLED === 'true') {
     let lng = app.getLocale();
     // remove country in language locale
